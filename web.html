@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Collections</title>
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome CDN -->
+    <style>
+        /* Inline CSS for image sizes */
+        .product img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        /* Product layout */
+        .product {
+            text-align: center;
+            margin: 10px;
+            background-size: 280px 340px; /* Set the background size */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* Top Status Bar */
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            background-size: 280px 340px; /* Set the background size */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .status-bar .icon a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Footer Navigation */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .bottom-nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .bottom-nav a:hover {
+            background-color: #444;
+        }
+
+        .bottom-nav i {
+            margin-right: 5px; /* Space between icon and text */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Status Bar -->
+    <div class="status-bar">
+        <div class="icon">
+            <a href="#dashboard"><i class="fas fa-bars"></i></a> <!-- Dashboard Icon Link -->
+        </div>
+        <div class="icon">
+            <a href="#notifications"><i class="fas fa-bell"></i></a> <!-- Notifications Icon Link -->
+        </div>
+    </div>
+
+    <header>
+        <h1>Explore</h1>
+        <p>Best trendy collections!</p>
+    </header>
+
+    <nav class="category-nav">
+        <button class="category ">All</button>
+        <button class="category">Men</button>
+        <button class="category active">Women</button>
+        <button class="category">Kids</button>
+    </nav>
+
+    <section class="product-list">
+        <article class="product">
+            <img src="img/tangerine-shirt.jpg" alt="Tangerine Shirt">
+            <h2>$240.32</h2>
+            <p>Tangerine Shirt</p>
+            <button class="buy-btn">Buy</button>
+        </article>
+        <article class="product">
+            <img src="img/long-sleeved-dress.jpg" alt="Long-sleeved Dress">
+            <h2>$325.42</h2>
+            <p>Long-sleeved Dress</p>
+            <button class="buy-btn">Buy</button>
+        </article>
+        <article class="product">
+            <img src="img/pink-overcoat.jpg" alt="Pink Overcoat">
+            <h2>$520.32</h2>
+            <p>Pink Overcoat</p>
+            <a href="order.html" class="buy-btn">Buy</a>
+        </article>
+        <article class="product">
+            <img src="img/half-sleeved-top.jpg" alt="Half-sleeved Top">
+            <h2>$340.32</h2>
+            <p>Half-sleeved Top</p>
+            <button class="buy-btn">Buy</button>
+        </article>
+    </section>
+
+    <!-- Footer Navigation with Icons -->
+    <footer>
+        <nav class="bottom-nav">
+            <a href="#"><i class="fas fa-home"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </nav>
+    </footer>
+</body>
+</html>

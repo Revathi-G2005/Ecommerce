@@ -1,0 +1,68 @@
+/* Reset and Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #111; /* Dark background color */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body stretches to the full height */
+}
+
+/* Anchor Tags */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Button Styling */
+button {
+    font-family: inherit;
+    font-size: 1em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-pink {
+    color: #ff007f; /* Pink color used across the design */
+}
+
+.bg-dark {
+    background-color: #222; /* Dark gray background */
+}
+
+.rounded {
+    border-radius: 10px;
+}
